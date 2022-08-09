@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gpa</title>
+    <style>
+      .f  {
+          margin-left: 20px;
+      }
+      form  {
+          margin-left: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+      }
+     .d {
+      
+        
+          position: absolute;
+          top: 100px;
+          left: 1000px;
+         
+         
+      }
+      td {
+        text-align: left;
+      }
+      .dd {
+         
+          position: absolute;
+          top: 100px;
+          left: 800px;
+          font-size: 2em;
+          transform: rotateZ(16deg);
+        
+      }
+
+      
+      .d1 {
+      position: absolute;
+      top: 100px;
+      left: 1000px;
+   
+     
+  }
+  .dd1 {
+     
+      position: absolute;
+      top: 100px;
+      left: 800px;
+      font-size: 2em;
+      transform: rotateZ(16deg);
+  }
+
+
+      .d3 {
+      position: absolute;
+      top: 100px;
+      left: 1000px;
+   
+     
+  }
+  .dd3 {
+     
+      position: absolute;
+      top: 100px;
+      left: 800px;
+      font-size: 2em;
+     
+          transform: rotateZ(16deg);
+  }
+
+  .d2 {
+      position: absolute;
+      top: 100px;
+      left: 1000px;
+   
+     
+  }
+  .dd2 {
+     
+      position: absolute;
+      top: 100px;
+      left: 800px;
+      font-size: 2em;
+     
+          transform: rotateZ(16deg);
+  }
+
+         .display {
+           display: block;
+          }
+        @keyframes imageA {
+          0% {
+            opacity: 1;
+          }
+          25% {
+            opacity: 0.78;
+          }
+          50% {
+            opacity: 0.7;
+          }
+          75% {
+            opacity: 0.8;
+          }
+          75% {
+            opacity: 1;
+          }
+        }
+
+      .l {
+          margin-left: 20px;
+      }
+      .row {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .g {
+         
+          margin-left: 50px;
+      }
+
+      #calc {
+        margin-top: 10px;
+          margin-left: 220px;
+      }
+      .adj {
+          margin-right: 20px;
+      }
+      .result {
+          position: absolute;
+          left: 500px;
+          top: 30px;
+      }
+      b {
+           width: 30px;
+           line-height: 1.9;
+      }
+      .head {
+              text-align: center;
+      }
+      
+    
+    </style>
+     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+      <h2 class="head alert alert-danger"> CALCULATE YOUR GPA </h2>
+   <table>
+          <form action="">
+              <tr>
+                  <td>
+                    <label for="" class="l"> Automata Theory  </label>
+                  </td>
+                  <td>
+                    <select class="selectpicker g"  name="" id="automata" >
+                        <option value="4">A</option>
+                        <option value="3.75">A-</option>
+                        <option value="3.50">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.75">B-</option>
+                        <option value="2.50">C+</option>
+                        <option value="2">C</option>
+                        <option value="1.75">C-</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                        <option value="NG">NG</option>
+                    </select>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="" class="l"> Network Administration </label>
+                </td>
+                <td>
+                  <select class="selectpicker g"  name="" id="network" >
+                    <option value="4">A</option>
+                    <option value="3.75">A-</option>
+                    <option value="3.50">B+</option>
+                    <option value="3">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.50">C+</option>
+                    <option value="2">C</option>
+                    <option value="1.75">C-</option>
+                    <option value="2">C</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                    <option value="NG">NG</option>
+                  </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                  <label for="" class="l"> Entrepreneurship </label>
+                </td>
+                <td>
+                  <select class="selectpicker g"  name="" id="entre" >
+                    <option value="4">A</option>
+                    <option value="3.75">A-</option>
+                    <option value="3.50">B+</option>
+                    <option value="3">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.50">C+</option>
+                    <option value="2">C</option>
+                    <option value="1.75">C-</option>
+                    <option value="2">C</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                    <option value="NG">NG</option>
+                  </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                  <label for="" class="l"> Software Engineering  </label>
+                </td>
+                <td>
+                  <select class="selectpicker g"  name="" id="software" >
+                    <option value="4">A</option>
+                    <option value="3.75">A-</option>
+                    <option value="3.50">B+</option>
+                    <option value="3">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.50">C+</option>
+                    <option value="2">C</option>
+                    <option value="1.75">C-</option>
+                    <option value="2">C</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                    <option value="NG">NG</option>
+                  </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                  <label for="" class="l"> Wireless communication </label>
+                </td>
+                <td>
+                    <select class="selectpicker g"  name="" id="wireless" >
+                        <option value="4">A</option>
+                        <option value="3.75">A-</option>
+                        <option value="3.50">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.75">B-</option>
+                        <option value="2.50">C+</option>
+                        <option value="2">C</option>
+                        <option value="1.75">C-</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                        <option value="NG">NG</option>
+                      </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                  <label for="" class="l"> Internet Programming </label>
+                </td>
+                <td>
+                  <select class="selectpicker g"  name="" id="ip">
+                    <option value="4">A</option>
+                    <option value="3.75">A-</option>
+                    <option value="3.50">B+</option>
+                    <option value="3">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.50">C+</option>
+                    <option value="2">C</option>
+                    <option value="1.75">C-</option>
+                    <option value="2">C</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                    <option value="NG">NG</option>
+                  </select>
+                </td>
+            </tr>
+                  </form>
+             
+      </table>
+
+  
+       
+      <input type="button" id="calc" value="Calculate" class="btn btn-primary">
+       
+
+       <div class="result">
+           
+             <p class="alert ygrade">
+                 <table class="table table-striped resposive-table table-bordered">
+                     <tr>
+                         <th class="alert alert-warning"> COURSES </th> <th class="alert alert-warning"> YOUR GRADE </th>
+                     </tr>
+                     <tr> 
+                         <td  > Automata The. </td>
+                         <td class="border " > <span id="a"> - </span>  </td>
+                     </tr>
+                     <tr>
+                        <td> Internet Pro. </td>
+                       <td class="border" >  <span id="i"> - </span> </td>
+                     </tr>
+                     <tr>
+                        <td>Entrepreneurship  </td>
+                      <td class="border" >   <span id="e"> - </span> </td>
+                     </tr>
+                     <tr>
+                        <td> Software Eng. </td>
+                        <td class="border"><span id="s"> - </span></td>
+                     </tr>
+                     <tr>
+                        <td> Network Admin </td>
+                       <td class="border" > <span id="n"> - </span> </td>
+                     </tr>
+                     <tr>
+                        <td> Wireless  </td>
+                       <td class="border" > <span id="w"> - </span></td>
+                     </tr>
+                     <tr>
+                       <td>
+                        <p  class="" id="gpa"> GPA :      </p>
+ 
+                       </td>
+                       <td class="display_grade">
+                           -
+                       </td>
+                      
+                     </tr>
+                 </table>
+              </p>
+
+       </div>  
+       <!-- 4 -->
+       <p class="alert alert-success dd"> YOU DID IT !!! </p>
+       <img class="d" width = '200px' height = '200px' src="./4.gif" alt="">
+       <!-- 3-4 -->
+      <p class="alert alert-success dd3"> IT'S NICE  !!! </p>
+      <img class="d3" width = '200px' height = '200px' src="./YARz.gif" alt="">
+    <!-- sad -->
+      <p class="alert alert-success dd2"> IT HURTS   !!! </p>
+      <img class="d2" width = '200px' height = '200px' src="./sad.gif" alt="">
+      <!-- -->
+      <p class="alert alert-success dd1"> YOU WELCOME  !!! </p>
+      <img class="d1" width = '200px' height = '200px' src="./giphyss.gif" alt="">
+      <script src="./app.js"></script>
+</body>
+</html>
